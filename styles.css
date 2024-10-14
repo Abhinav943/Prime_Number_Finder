@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lora", serif;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+
+  padding: 2rem;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+main {
+  height: auto;
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: #ff3cac;
+  background-image: linear-gradient(
+    225deg,
+    #ff3cac 0%,
+    #784ba0 50%,
+    #2b86c5 100%
+  );
+
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  margin: auto;
+  transition: background 0.5s ease;
+}
+
+h1 {
+  font-size: 2.2rem;
+  color: #333;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+button {
+  padding: 0.8rem 3.5rem;
+  border: none;
+  background-color: #ff5e57;
+  color: white;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background-color: #ff3d34;
+}
+
+input {
+  height: 2.5rem;
+  width: 100%;
+  max-width: 400px;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+p {
+  display: none;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.85);
+  color: #333;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+body.dark-mode {
+  background: linear-gradient(
+    135deg,
+    #1c1c1c,
+    #383838
+  ); /* Dark mode gradient */
+  color: white;
+}
+
+body.dark-mode main {
+  background: linear-gradient(135deg, #2e2e2e, #505050);
+}
+
+body.dark-mode p {
+  background-color: rgba(60, 60, 60, 0.85);
+  color: white;
+}
+
+body.dark-mode h1 {
+  color: white;
+}
+
+
+button#darkModeToggle {
+  margin-top: 1rem;
+  background-color: #007bff;
+}
+
+button#darkModeToggle:hover {
+  background-color: #0056b3;
+}
